@@ -1,0 +1,43 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  width: 1240px;
+}
+
+.header img {
+  height: 68px;
+  width: 210.32px;
+}
+
+@media screen and (max-width: 699px) {
+  .container {
+    margin: 20px 30px;
+  }
+
+  .header {
+    width: 375px;
+    height: 47px;
+  }
+
+  .header img {
+    width: 145px;
+    height: 47px;
+    margin-left: 20px;
+  }
+
+  nav li {
+    font-size: 12px;
+    white-space: nowrap;
+  }
+
+  .container img {
+    height: 30px;
+    width: 70px;
+  }
+
+  .nav-container {
+    margin-right: 20px;
+  }
+
+}
