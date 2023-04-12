@@ -1,5 +1,4 @@
 import React from "react";
-import { useEffect, useState } from "react";
 import Header from "../../components/header/header";
 import Footer from "../../components/footer/footer";
 import imageAbout from "../../assets/imageAbout.jpg";
@@ -38,32 +37,14 @@ export default function About() {
     return Items;
   }
   const Items = AboutItems();
-  const [mode, setMode] = useState("desktop");
-  useEffect(() => {
-    if (window.innerWidth >= 699) {
-      setMode("desktop");
-    } else {
-      setMode("mobile");
-    }
-    window.addEventListener("resize", onResize);
-
-    function onResize() {
-      if (window.innerWidth >= 699 && mode === "mobile") {
-        setMode("desktop");
-      } if (window.innerWidth < 699 && mode==='desktop'){
-        setMode("mobile");
-      }
-    }
-  },[]);
-
-
+  
   return (
     <div>
       <Header />
       <div className="coverAbout">
         <img
-          className={mode}
-          src={mode === "mobile" ? imageAbout : imageAbout}
+          className="imageAbout"
+          src={imageAbout}
           alt="montagnes"
         />
       </div>

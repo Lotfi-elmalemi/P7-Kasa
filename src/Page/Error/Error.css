@@ -58,9 +58,16 @@ body {
   .blocError a {
     font-size: 14px;
   }
+}
 
+@media screen and (min-width: 700px) and (max-width: 820px) {
   .blocError {
-    padding-top: 198.71px;
+    width: 650px;
+  }
+
+  .blocError p {
+    margin: auto;
+    text-align: center;
   }
 }
 

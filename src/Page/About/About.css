@@ -21,7 +21,7 @@ body{
   
 
 
-.desktop{
+.imageAbout{
     object-fit: cover!important;
 }
  
@@ -55,4 +55,30 @@ body{
 .sectionAbout {
     height: auto;
 }
+
+.footer-container {
+    margin-top: 50px;
 }
+}
+
+@media screen and (min-width: 700px) and (max-width: 820px) {
+    .coverAbout {
+        width: 650px;
+    }
+
+    .sectionAbout {
+        width: 650px;
+        height: 1150px ;
+    }
+    
+
+    .About {
+        width: 650px!important;
+    }
+
+    
+}
+
+    
+
+

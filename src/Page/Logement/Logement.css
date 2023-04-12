@@ -142,8 +142,13 @@ svg {
   
 }
 
+
 .content {
   flex-flow: column;
+}
+
+.description {
+  height: auto ;
 }
 
 .tags li {
@@ -180,6 +185,29 @@ svg {
   font-size: 14px;
   display: flex;
   align-items: center;
+}
+
+}
+
+@media screen and (min-width: 700px) and (max-width: 820px) {
+  .content {
+    width: 650px;
+  }
+
+  .description {
+    height: 670px;
+    width: 650px;
+    display: flex;
+    flex-flow: column;
+}
+
+.description div {
+  flex: none;
+  margin-bottom: 10px;
+}
+
+.content b {
+  font-size: 24px;
 }
 
 }

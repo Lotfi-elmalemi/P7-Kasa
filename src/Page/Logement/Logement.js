@@ -19,7 +19,7 @@ export default function Logement() {
 
     setItem(foundItem);
   }, []);
-  // redirect si foundItem is undefined
+  // si foundItem ne trouve pas l'id alors page 404
   if (!item) {
     return <Error />;
   }
